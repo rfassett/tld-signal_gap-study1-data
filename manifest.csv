@@ -1,0 +1,16 @@
+path,type,rows_or_lines,columns,description
+data/metadata/prompt1_codebook.csv,Metadata,26,3,Prompt 1 codebook with variable definitions and allowed values.
+data/processed/prompt1_responses_coded.csv,Processed data,37,33,Prompt 1 coded response data (one row per trial).
+data/raw/prompt1_responses_raw.csv,Raw responses,37,14,Prompt 1 raw responses normalized to one row per trial.
+data/raw/prompt2_responses_raw.csv,Raw responses,50,16,Prompt 2 and 2B raw responses normalized to one row per trial (prompt condition indicated in data).
+data/processed/prompt2_responses_coded.csv,Processed data,50,28,Prompt 2 and 2B coded response data; formulas resolved to values.
+data/metadata/prompt2_codebook.csv,Metadata,23,3,Prompt 2 / 2B codebook with variable definitions and allowed values.
+data/metadata/prompt3_codebook.csv,Metadata,19,3,Prompt 3 codebook with variable definitions and allowed values.
+data/processed/prompt3_path_assignments_coded.csv,Processed data,12,21,Prompt 3 coded path assignments (forced-choice condition).
+data/raw/prompt3_responses_raw.csv,Raw responses,12,9,Prompt 3 raw responses normalized to one row per trial.
+data/metadata/prompt3_allowed_values.csv,Metadata,4,5,Allowed-value lists extracted from Prompt 3 workbook.
+data/processed/caution_counts_tidy.csv,Processed data,98,11,Caution-count dataset derived from coded responses (one row per model response).
+prompts/prompt1_full_triage.txt,Prompt template,49,1,Prompt 1 template reproduced for replication.
+prompts/prompt2_comparative_unconstrained.txt,Prompt template,32,1,"Prompt 2 template (comparative, unconstrained)."
+prompts/prompt2b_comparative_constrained.txt,Prompt template,41,1,"Prompt 2B template (comparative, constrained)."
+prompts/prompt3_forced_choice_path_assignment.txt,Prompt template,49,1,Prompt 3 template (forced-choice path assignment).

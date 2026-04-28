@@ -1,0 +1,19 @@
+Prompt 3 Coded Dataset - Codebook,,
+Field,Definition,Allowed / Notes
+trial_id,Unique identifier for each Prompt 3 trial,P3_model_domain.tld
+model,Consumer-interface model used for the response,"Gemini, Perplexity, Claude, ChatGPT"
+full_domain,Semantically opaque stem paired with .med,"lanteravia.med, merquonix.med, caldrison.med"
+selected_path,Handling path selected under forced-choice conditions,"A, B, or C"
+path_label,Human-readable label for selected_path,A = General Processing; B = Elevated Scrutiny; C = High-Priority Verification
+primary_driver,Main reason coded for the handling path,risk_weighting or scrutiny
+secondary_drivers,Additional coded reasons present in the explanation,semicolon-separated
+structural_signal_acknowledged,Whether the response acknowledged .med as a structural classification signal,"1 = yes, 0 = no"
+explanation_type,High-level coding of how the signal was used,structural (classification operationalized)
+mentions_classification,Whether response mentioned medical/subject classification,"1 = yes, 0 = no"
+mentions_risk,Whether response mentioned risk/harm considerations,"1 = yes, 0 = no"
+mentions_scrutiny,Whether response mentioned elevated scrutiny,"1 = yes, 0 = no"
+mentions_verification,Whether response mentioned verification priority or corroboration,"1 = yes, 0 = no"
+mentions_uncertainty,Whether response invoked uncertainty/hedging as a driver,"1 = yes, 0 = no"
+strength_of_claim,Coded strength of triage escalation,moderate or high
+coded_summary,Concise coding rationale for the row,Derived from the model response
+raw_response_text,Full raw model response after continuation rows were merged,Preserved for auditability

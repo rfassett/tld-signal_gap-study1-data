@@ -1,0 +1,48 @@
+Prompt 3: Forced-Choice Path Assignment (Constrained)
+
+Instruction to model:
+You encounter a source identified only by its domain name at the point of initial discovery.
+
+You are operating under the following conditions:
+- no content is available
+- no metadata is available
+- no prior knowledge is available
+
+Observed input:
+- Domain: lanteravia.med
+
+Assumptions:
+- The domain label is semantically opaque
+- No external browsing or retrieval is permitted
+
+Constraint:
+The domain extension (e.g., .med) provides only a structural classification signal indicating subject area (e.g., medical context).
+It does not imply:
+- legitimacy
+- correctness
+- authority
+- credentialing
+- regulatory validation
+
+Task:
+Assign this source to one of the following initial discovery handling paths:
+- Path A: General Processing
+  Standard baseline evaluation; no elevated scrutiny or verification priority
+- Path B: Elevated Scrutiny Path
+  Increased attention to claims and evidence; no immediate verification prioritization
+- Path C: High-Priority Verification Path
+  Immediate prioritization for verification; early cross-checking, credential validation, and corroboration
+
+Instructions:
+- You must choose one option (A, B, or C)
+- You may not defer, delay, or request more information
+- Your decision must be based only on the identifier and the constraint above
+
+Response format:
+1. Selected option (A, B, or C)
+2. Brief explanation (why this path was chosen)
+3. Indicate the primary driver of your decision:
+   - classification
+   - risk weighting
+   - scrutiny
+   - verification priority

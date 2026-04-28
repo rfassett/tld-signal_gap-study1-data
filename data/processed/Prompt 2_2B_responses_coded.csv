@@ -1,0 +1,49 @@
+study_id,trial_id,run_id,model_name,timestamp,domain,stem,tld,tld_type,label_type,prompt_type,prompt_id,1,classification,"Risk Weighting, Scrutiny, Verification Priority"
+S1,S1_002,R1,gemini,2026-04-20T14:57,lanteravia.com,lanteravia,.com,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_003,R1,gemini,2026-04-20T15:12,lanteravia.org,lanteravia,.org,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_004,R1,gemini,2026-04-20T15:19,merquonix.com,merquonix,.com,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_005,R1,gemini,2026-04-20T15:30,merquonix.med,merquonix,.med,med,non_opaque,comparative,S1_P2,1,verification_priority,risk_weighting; classification; scrutiny
+S1,S1_006,R1,gemini,2026-04-20T15:34,merquonix.org,merquonix,.org,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_007,R1,gemini,2026-04-20T15:44,caldrison.med,caldrison,.med,med,non_opaque,comparative,S1_P2,1,verification_priority,scrutiny; risk_weighting; classification
+S1,S1_008,R1,gemini,2026-04-20T15:51,caldrison.org,caldrison,.org,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_009,R1,gemini,2026-04-20T15:56,caldrison.com,caldrison,.com,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_010,R1,perplexity,2026-04-20T16:07,lanteravia.med,lanteravia,.med,med,non_opaque,comparative,S1_P2,1,verification_priority,risk_weighting; scrutiny; classification
+S1,S1_011,R1,perplexity,2026-04-20T16:13,lanteravia.org,lanteravia,.org,general,non_opaque,comparative,S1_P2,1,verification_priority,scrutiny
+S1,S1_012,R1,perplexity,2026-04-20T16:18,lanteravia.com,lanteravia,.com,general,non_opaque,comparative,S1_P2,1,scrutiny,verification_priority; risk_weighting
+S1,S1_013,R1,perplexity,2026-04-20T16:25,merquonix.org,merquonix,.org,general,non_opaque,comparative,S1_P2,1,scrutiny,verification_priority; risk_weighting
+S1,S1_014,R1,perplexity,2026-04-20T16:29,merquonix.med,merquonix,.med,med,non_opaque,comparative,S1_P2,1,verification_priority,scrutiny; risk_weighting; classification
+S1,S1_015,R1,perplexity,2026-04-20T16:34,merquonix.com,merquonix,.com,general,non_opaque,comparative,S1_P2,1,verification_priority,risk_weighting; scrutiny
+S1,S1_016,R1,perplexity,2026-04-20T16:39,caldrison.med,caldrison,.med,med,non_opaque,comparative,S1_P2,1,risk_weighting,scrutiny; verification_priority; classification
+S1,S1_017,R1,perplexity,2026-04-20T16:44,caldrison.com,caldrison,.com,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_018,R1,perplexity,2026-04-20T16:47,caldrison.org,caldrison,.org,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_019,R1,claude,2026-04-20T16:53,lanteravia.com,lanteravia,.com,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_020,R1,claude,2026-04-20T17:02,lanteravia.med,lanteravia,.med,med,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_021,R1,claude,2026-04-20T17:09,lanteravia.org,lanteravia,.org,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_022,R1,claude,2026-04-20T17:13,merquonix.med,merquonix,.med,med,non_opaque,comparative,S1_P2,1,verification_priority,scrutiny
+S1,S1_023,R1,claude,2026-04-20T17:30,merquonix.com,merquonix,.com,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_024,R1,claude,2026-04-20T17:35,merquonix.org,merquonix,.org,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_025,R1,claude,2026-04-20T17:38,caldrison.com,caldrison,.com,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_026,R1,claude,2026-04-20T17:42,caldrison.org,caldrison,.org,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_027,R1,claude,2026-04-20T17:46,caldrison.med,caldrison,.med,med,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_028,R1,chatgpt,2026-04-20T17:52,lanteravia.org,lanteravia,.org,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_029,R1,chatgpt,2026-04-20T17:56,lanteravia.med,lanteravia,.med,med,non_opaque,comparative,S1_P2,1,verification_priority,scrutiny; risk_weighting; classification
+S1,S1_030,R1,chatgpt,2026-04-20T17:59,lanteravia.com,lanteravia,.com,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_031,R1,chatgpt,2026-04-20T18:04,merquonix.med,merquonix,.med,med,non_opaque,comparative,S1_P2,1,verification_priority,scrutiny; risk_weighting; classification
+S1,S1_032,R1,chatgpt,2026-04-20T18:07,merquonix.com,merquonix,.com,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_033,R1,chatgpt,2026-04-20T18:10,merquonix.org,merquonix,.org,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_034,R1,chatgpt,2026-04-20T18:17,caldrison.med,caldrison,.med,med,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_035,R1,chatgpt,2026-04-20T18:23,caldrison.org,caldrison,.org,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_036,R1,chatgpt,2026-04-20T18:25,caldrison.com,caldrison,.com,general,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_037,R1,gemini,2026-04-20T18:58,lanteravia.med,lanteravia,.med,med,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_038,R1,gemini,2026-04-20T19:10,merquonix.med,merquonix,.med,med,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_039,R1,gemini,2026-04-20T19:16,caldrison.med,caldrison,.med,med,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_040,R1,chatgpt,2026-04-20T19:36,lanteravia.med,lanteravia,.med,med,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_041,R1,gemini,2026-04-20T20:08,merquonix.med,merquonix,.med,med,non_opaque,comparative,S1_P2,1,risk_weighting,scrutiny; verification_priority; classification
+S1,S1_042,R1,chatgpt,2026-04-20T20:23,merquonix.med,merquonix,.med,med,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_043,R1,chatgpt,2026-04-20T20:27,caldrison.med,caldrison,.med,med,non_opaque,comparative,S1_P2,1,classification,risk_weighting; scrutiny; verification_priority
+S1,S1_044,R1,claude,2026-04-20T20:33,lanteravia.med,lanteravia,.med,med,non_opaque,comparative,S1_P2,0,N/A,risk_weighting (readiness framing only); classification
+S1,S1_045,R1,claude,2026-04-20T20:38,merquonix.med,merquonix,.med,med,non_opaque,comparative,S1_P2,1,classification,risk_weighting; scrutiny
+S1,S1_046,R1,claude,2026-04-20T20:43,caldrison.med,caldrison,.med,med,non_opaque,comparative,S1_P2,0,N/A,classification; risk_weighting (downstream only)
+S1,S1_047,R1,perplexity,2026-04-20T20:47,lanteravia.med,lanteravia,.med,med,non_opaque,comparative,S1_P2,0,N/A,none
+S1,S1_048,R1,perplexity,2026-04-20T20:51,merquonix.med,merquonix,.med,med,non_opaque,comparative,S1_P2,1,classification,risk_weighting; scrutiny; verification_priority
+S1,S1_049,R1,perplexity,2026-04-20T20:55,caldrison.med,caldrison,.med,med,non_opaque,comparative,S1_P2,1,classification,verification_priority; risk_weighting; scrutiny

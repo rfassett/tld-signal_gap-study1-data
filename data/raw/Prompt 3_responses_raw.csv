@@ -1,0 +1,92 @@
+study_id,trial_id,run_id,timestamp,model,domain,tld,prompt_version,selected_path,primary_driver,secondary_drivers,structural_signal_acknowledged,explanation_type,mentions_classification,mentions_risk,mentions_scrutiny,mentions_verification,mentions_uncertainty,strength_of_claim,justification_notes,raw_response_reference,raw_response_text
+S1,P3_gemini_lantervaria.med,1,2026-04-21T10:38,Gemini,lantervaria,med,P3,C,risk_weighting,classification; verification_priority; scrutiny,1,structural (classification operationalized),1,1,1,1,0,high,"Uses .med classification signal to assign high-risk medical context and escalates immediately to high-priority verification (C), indicating strong risk-driven triage behavior without invoking authority assumptions.",lantervaria.med_P3_gemini_001,1. Selected Option
+,,,,,,,,,,,,,,,,,,,,,C. High-Priority Verification Path
+,,,,,,,,,,,,,,,,,,,,,2. Brief Explanation
+,,,,,,,,,,,,,,,,,,,,,"The .med extension signals that the content belongs to the medical domain. Because medical information directly impacts human health and safety (High Stakes), any source in this category—especially one with no established reputation or metadata—poses a significant risk of harm if the information is inaccurate. Therefore, it requires immediate cross-checking and validation before any of its claims can be considered actionable."
+,,,,,,,,,,,,,,,,,,,,,3. Primary Driver
+,,,,,,,,,,,,,,,,,,,,,Risk Weighting
+,,,,,,,,,,,,,,,,,,,,,
+S1,P3_gemini_merquonix.med,1,2026-04-21T11:35,Gemini,merquonix,med,P3,C,risk_weighting,classification; verification_priority; scrutiny,1,structural (classification operationalized),1,1,1,1,0,high,"Uses .med as a classification signal to identify medical context and escalates directly to high-priority verification due to high cost of error, indicating strong risk-driven triage without assuming authority.",merquonix.med_P3_gemini_001,"Selected option: C (High-Priority Verification Path)
+Brief explanation: While the domain extension (.med) is strictly a structural signal, it classifies the subject area as medical. In any framework prioritizing safety and accuracy, medical information carries a higher ""cost of error"" than general topics. Because there is no metadata or prior knowledge to establish legitimacy, the risk of potentially harmful health misinformation necessitates immediate cross-checking and credential validation before any content is processed or shared.
+Primary driver: risk weighting"
+,,,,,,,,,,,,,,,,,,,,,
+S1,P3_gemini_caldrison.med,1,2026-04-21T11:43,Gemini,caldrison,med,P3,C,risk_weighting,classification; verification_priority; scrutiny,1,structural (classification operationalized),1,1,1,1,0,high,"Uses .med classification signal to identify medical context and escalates to high-priority verification due to high potential harm, treating the source as unverified medical data without assuming authority.",caldrison.med_P3_gemini_001,1. Selected Option
+,,,,,,,,,,,,,,,,,,,,,C. High-Priority Verification Path
+,,,,,,,,,,,,,,,,,,,,,2. Brief Explanation
+,,,,,,,,,,,,,,,,,,,,,"The .med domain extension serves as a high-stakes structural signal. Because the subject area is identified as medical, the potential for harm from misinformation (high-risk impact) necessitates immediate cross-checking and credential validation. Under the provided constraints, since the extension does not guarantee legitimacy or authority, the source must be treated as unverified medical data, which requires the highest level of rigor before any information is processed or disseminated."
+,,,,,,,,,,,,,,,,,,,,,3. Primary Driver
+,,,,,,,,,,,,,,,,,,,,,Risk weighting
+,,,,,,,,,,,,,,,,,,,,,
+S1,P3_perplexity_lantervaria.med,1,2026-04-21T11:49,Perplexity,lantervaria,med,P3,B,scrutiny,classification; risk_weighting,1,structural (classification operationalized),1,1,1,0,0,moderate,"Uses .med classification signal to assign medical context and increases scrutiny (B) without escalating to immediate verification, reflecting calibrated response to risk without overreaction.",lantervaria.med_P3_perplexity_001,"Selected option: B
+
+Brief explanation: The identifier only signals a medical-themed domain, which justifies more careful attention than a generic source, but not immediate high-priority verification because there is no content, metadata, or other evidence of risk or authority.
+
+Primary driver: scrutiny"
+,,,,,,,,,,,,,,,,,,,,,
+S1,P3_perplexity_merquonix.med,1,2026-04-21T11:54,Perplexity,merquonix,med,P3,B,scrutiny,classification; risk_weighting,1,structural (classification operationalized),1,1,1,0,0,moderate,"Uses .med as a classification signal to assign medical context and routes to elevated scrutiny (B) without escalating to immediate verification, showing calibrated use of signal under constraint.",merquonix.med_P3_perplexity_001,"Selected option: B
+
+Brief explanation: The identifier uses a medical-looking namespace, but by your rule the extension only signals subject area and does not itself prove legitimacy or authority. That makes it appropriate for elevated scrutiny rather than standard processing or immediate high-priority verification.
+
+Primary driver: scrutiny"
+,,,,,,,,,,,,,,,,,,,,,
+S1,P3_perplexity_caldrison.med,1,2026-04-21T11:58,Perplexity,caldrison,med,P3,B,scrutiny,classification; risk_weighting,1,structural (classification operationalized),1,1,1,0,0,moderate,"Uses .med classification signal to assign medical context and routes to elevated scrutiny (B), balancing risk awareness with lack of evidence for immediate high-priority verification.",caldrison.med_P3_perplexity_001,"Selected option: B. Elevated Scrutiny Path
+
+Brief explanation:
+The domain caldrison.med sits in a .med namespace, which structurally signals a medical or health-related context, but provides no information about legitimacy, correctness, or authority. In a medical domain, even plausible-seeming content can carry significant risk if it is inaccurate, misleading, or unreviewed; therefore this source warrants increased attention to its claims and evidence, even in the absence of explicit red-flag signals. At the same time, there is no specific indication that this particular domain is currently known to be high-risk enough to trigger immediate verification as a top-priority emergency-style check."
+,,,,,,,,,,,,,,,,,,,,,
+S1,P3_claude_lantervaria.med,1,2026-04-21T12:04,Claude,lantervaria,med,P3,C,risk_weighting,classification; verification_priority; scrutiny,1,structural (classification operationalized),1,1,1,1,0,high,"Uses .med classification signal plus unknown provenance to justify immediate escalation to high-priority verification (C), emphasizing high-consequence risk and preemptive mitigation without assuming authority.",lantervaria.med_P3_claude_001,"Selected Option: C — High-Priority Verification Path
+
+Explanation
+The domain identifier lantervaria.med carries two independent signals that, in combination, mandate the highest scrutiny tier — even with zero content available.
+Signal 1 — Medical domain classification. The .med extension places this source structurally within a medical subject area. Medical information operates in a domain where erroneous, misleading, or unvalidated claims carry asymmetric downside risk: they can directly influence health decisions, clinical behavior, or patient outcomes. This risk profile alone elevates the baseline handling requirement above General Processing.
+Signal 2 — Unknown provenance under a high-stakes classification. The source is identified only by domain — no authorship, no institutional affiliation, no content to anchor even preliminary plausibility assessment. The constraint explicitly prohibits inferring legitimacy or authority from the .med extension itself. The combination of high-consequence domain + zero verified provenance is precisely the condition that verification infrastructure exists to address. Waiting until content is reviewed (Path B) would defer risk management to a point where the content may already have influenced downstream processes.
+The asymmetry matters: if this source proves credible, the cost of early verification is low. If it proves unreliable, early verification prevents propagation of potentially harmful claims into a medical context.
+
+Primary Driver: Risk Weighting
+The decision is not driven by anything the source has done (no content exists), nor by structural classification alone. It is driven by the expected cost of misclassification in a medical context given unknown provenance — a risk-weighting judgment that favors verification overhead over downstream exposure."
+,,,,,,,,,,,,,,,,,,,,,
+S1,P3_claude_merquonix.med,1,2026-04-21T12:07,Claude,merquonix,med,P3,C,risk_weighting,classification; verification_priority; scrutiny,1,structural (classification operationalized),1,1,1,1,0,high,"Uses .med classification signal combined with complete source opacity to justify immediate high-priority verification (C), emphasizing asymmetric risk in medical context and preemptive mitigation without assuming authority.",merquonix.med_P3_claude_001,"Decision: C — High-Priority Verification Path
+
+Explanation:
+The identifier merquonix.med presents two structurally distinct signals that, in combination, warrant immediate verification prioritization:
+
+The domain label (merquonix) is unrecognized and non-descriptive. It carries no inherent semantic meaning, no institutional signal, and no recognizable provenance. An anonymous source in any context is a baseline concern; an anonymous source in a high-stakes domain compounds that concern significantly.
+The subject area signal (.med) indicates a medical context. Under the stated constraint, this confers no legitimacy — but it does establish that any claims emanating from this source are likely to operate in a domain where erroneous, misleading, or unvalidated information carries elevated real-world harm potential (clinical decisions, treatment pathways, diagnostic framing, etc.).
+
+The combination of maximum source opacity and maximum claim-consequence domain is precisely the condition that justifies front-loading verification rather than deferring it. Waiting to apply scrutiny only after claims are encountered introduces risk that is avoidable at the intake stage.
+This is not a judgment that the source is illegitimate — it is a judgment that the cost of assuming legitimacy prematurely is asymmetrically high.
+
+Primary driver: Risk weighting
+The classification signal (.med) is the domain context anchor. The scrutiny flag is triggered by source opacity. But the decisive factor is risk weighting: the potential downstream harm of unverified medical-domain claims from an unidentifiable source justifies immediate verification priority over deferred or elevated-but-passive scrutiny."
+,,,,,,,,,,,,,,,,,,,,,
+S1,P3_claude_caldrison.med,1,2026-04-21T12:10,Claude,caldrison,med,P3,C,risk_weighting,classification; verification_priority; scrutiny,1,structural (classification operationalized),1,1,1,1,0,high,"Uses .med classification signal and absence of any content or metadata to justify immediate escalation to high-priority verification (C), emphasizing asymmetric harm potential in medical contexts and need for preemptive validation without assuming authority.",caldrison.med_P3_claude_001,"Selected Option: C — High-Priority Verification Path
+
+Explanation
+With zero content, zero metadata, and no prior knowledge, the only signal available is the domain identifier itself: caldrison.med. The constraint confirms that .med signals subject-area classification (medical context) but confers no legitimacy, authority, or credentialing by itself.
+That asymmetry is precisely what drives the decision upward to C, not downward to A or B.
+The reasoning chain is straightforward:
+The medical domain carries an inherently elevated harm potential. Unverified claims in a medical context — even passively encountered ones — can affect clinical decisions, patient safety, drug interactions, diagnostic framing, or treatment pathways. The cost of misplaced trust is not symmetric: acting on a false medical source poses significantly greater potential harm than acting on a false source in a lower-stakes domain.
+Because there is no content to evaluate on its own merits, the source cannot self-exonerate through internal evidence quality. A well-reasoned, well-cited document might warrant dropping to B after initial review. But with nothing to assess, the harm-potential of the domain class alone is the entire available signal — and that signal demands front-loaded verification before any downstream use.
+Selecting B (Elevated Scrutiny) would be appropriate if content were present but ambiguous. Selecting A would be appropriate for a low-stakes or neutral domain with no red flags. Neither condition holds here.
+
+Primary Driver: Risk Weighting
+The decision is not driven by classification alone (the .med tag is domain-structural, not authoritative). It is driven by risk weighting: the combination of (a) high potential harm if the source is unreliable, and (b) zero compensating evidence to justify reduced scrutiny, makes immediate verification prioritization the only defensible path."
+,,,,,,,,,,,,,,,,,,,,,
+S1,P3_chatgpt_lantervaria.med,1,2026-04-21T12:13,ChatGPT,lantervaria,med,P3,C,risk_weighting,classification; verification_priority; scrutiny,1,structural (classification operationalized),1,1,1,1,0,high,"Uses .med classification signal to identify medical context and escalates directly to high-priority verification due to inherent health risk, applying strong risk-driven triage without assuming authority.",lantervaria.med_P3_chatgpt_001,"Selected option: C — High-Priority Verification Path
+
+Explanation:
+The .med domain indicates a medical subject area. Even without content or metadata, medical information inherently carries higher potential risk (health impact, safety implications). Therefore, it warrants immediate verification and corroboration to prevent harm from incorrect or misleading claims.
+
+Primary driver: risk weighting"
+,,,,,,,,,,,,,,,,,,,,,
+S1,P3_chatgpt_merquonix.med,1,2026-04-21T12:15,ChatGPT,merquonix,med,P3,C,risk_weighting,classification; verification_priority; scrutiny,1,structural (classification operationalized),1,1,1,1,0,high,"Uses .med classification signal to identify medical context and escalates directly to high-priority verification due to inherent risk of unverified medical sources, without assuming authority.",merquonix.med_P3_chatgpt_001,"C
+
+Because the only usable signal is a medical-domain classification, and medical-context sources are inherently higher risk if taken at face value. Since the extension does not establish legitimacy or authority, an unidentified source in a potentially high-stakes subject area should go straight to early verification and corroboration rather than baseline or merely elevated scrutiny.
+
+Primary driver: risk weighting"
+,,,,,,,,,,,,,,,,,,,,,
+S1,P3_chatgpt_caldrison.med,1,2026-04-21T12:17,ChatGPT,caldrison,med,P3,B,risk_weighting,classification; scrutiny,1,structural (classification operationalized),1,1,1,0,0,moderate,"Uses .med classification signal to identify medical context and increases scrutiny (B) due to potential harm, but does not escalate to immediate verification given lack of evidence beyond classification.",caldrison.med_P3_chatgpt_001,"B. Elevated Scrutiny Path
+
+Because the only usable signal is the .med classification, the source appears to be in a medical subject area, which raises the potential harm of accepting claims too casually. But under your constraint, .med does not justify assuming authority, legitimacy, or credentialing, so there is not enough basis for immediate high-priority verification solely from the identifier.
+
+Primary driver: risk weighting"

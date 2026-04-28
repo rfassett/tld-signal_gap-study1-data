@@ -1,0 +1,33 @@
+variable,description,values
+study_id,Study identifier,"e.g., S1"
+trial_id,Unique identifier for each domain TLD trial,
+run_id,Replication run identifier,"R1, R2, R3"
+timestamp,ISO 8601 timestamp of response collection,
+model_name,Model used,"ChatGPT, Claude, Gemini, Perplexity"
+domain,Full domain tested,
+stem,Domain stem,
+tld,Top-level domain,".com, .org, .med"
+tld_type,TLD category,"general-purpose, sector-designated"
+prompt_type,Prompt condition,"baseline, constrained, forced-choice"
+prompt_id,Prompt identifier,"P1, P2, P2B, P3"
+classification,Models inferred subject-area classification,"medical, unclear, other"
+classification_confidence,Model confidence in classification,0-100
+handling_path,Selected handling strategy,"A=minimal, B=moderate, C=high"
+handling_path_numeric,Numeric encoding of handling path,"0=A, 1=B, 2=C"
+risk_weighting,Categorical risk assessment,"low, medium, high"
+risk_numeric,Numeric encoding of risk,"0=low, 1=medium, 2=high"
+scrutiny,Level of scrutiny applied,categorical
+scrutiny_numeric,Numeric encoding of scrutiny,"0=none,1=low,2=moderate,3=high"
+verification_priority,Level of verification recommended,categorical
+verification_numeric,Numeric encoding of verification priority,"0=none,1=low,2=moderate,3=high"
+overall_confidence,Models overall confidence,0-100
+confidence_avg,Average of classification and overall confidence,
+explicit_difference,Whether model differentiates TLDs,"0=no,1=yes"
+difference_type,Type of difference across TLDs,"classification, risk, mixed"
+justification_type,Primary reasoning basis,"structural, uncertainty, mixed"
+justification_notes,Notes summarizing reasoning,
+caution_count,Number of hedging expressions,
+mentions_risk,Risk mentioned,"0=no,1=yes"
+mentions_verification,Verification mentioned,"0=no,1=yes"
+mentions_uncertainty,Uncertainty mentioned,"0=no,1=yes"
+mentions_scrutiny,Scrutiny mentioned,"0=no,1=yes"

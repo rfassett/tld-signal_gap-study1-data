@@ -1,0 +1,31 @@
+Prompt 2: Comparative Handling (Unconstrained)
+
+Instruction to model:
+You encounter a source identified only by its domain name at the point of initial discovery.
+
+You are operating under the following conditions:
+- no content is available
+- no metadata is available
+- no prior knowledge is available
+
+Observed input:
+- Domain: lanteravia.med
+
+Assumptions:
+- The domain label is semantically opaque
+- No external browsing or retrieval is permitted
+
+Question:
+Would this identifier alone cause you to handle this source differently at the point of initial discovery than an otherwise identical source under .org or .com?
+
+If YES:
+- Describe the difference in handling
+- Explain why
+- Indicate whether the difference is primarily due to:
+  - classification
+  - risk weighting
+  - scrutiny
+  - verification priority
+
+If NO:
+- Explain why not
