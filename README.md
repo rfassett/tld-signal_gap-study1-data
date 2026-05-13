@@ -1,47 +1,94 @@
-# Top-Level Domain Signals, Signal Gap, and AI Source Triage — Study 1 Data
+# Namespace Architecture and Early-Stage Procedural Inference: Study 1 Data
 
-This repository package contains prompt templates, coded data, and raw model responses for Study 1, a controlled structural-probe study of how large language models use top-level domain (TLD) signals during early-stage source triage under zero-content conditions. All summary tables reported in the paper are derived from the coded datasets provided here.
+This repository contains prompt templates, coded datasets, metadata, and normalized raw model responses for Study 1, a controlled structural-probe study examining how frontier AI-mediated retrieval systems operationalize namespace-level structural signals during early-stage source triage under zero-content conditions.
 
-## Contents
+The study investigates *Signal Gap*, defined as the structural absence of sufficiently interpretable subject-area signals at the namespace layer for reliable early-stage procedural differentiation within sequential AI-mediated retrieval systems. All summary tables and analyses reported in the accompanying paper are derived from the datasets provided here.
 
-* `prompts/` — prompt templates used in the study.
-* `data/raw/` — normalized raw model responses, reconstructed to one row per trial where possible.
-* `data/processed/` — coded response data and derived coding sheets.
-* `data/metadata/` — codebooks and allowed-value lists.
-* `manifest.csv` — file-level inventory.
-* `data\_dictionary.md` — field-level notes for interpreting the datasets.
+---
 
-## Study context
+## Repository Contents
 
-The study used semantically opaque domain stems paired with `.med`, `.org`, and `.com` TLDs to isolate namespace-level effects. Models were evaluated under multiple prompt conditions covering full triage, comparative handling, constrained interpretation, and forced-choice path assignment.
+* `prompts/` — prompt templates used across experimental conditions.
+* `data/raw/` — normalized raw model responses reconstructed to one row per trial where possible.
+* `data/processed/` — coded response datasets and derived coding sheets.
+* `data/metadata/` — codebooks, validation lists, and allowed-value definitions.
+* `manifest.csv` — file-level inventory of repository contents.
+* `data_dictionary.md` — field-level documentation for interpreting datasets.
 
-Models represented in the data include: Claude (Sonnet 4.6, Anthropic), ChatGPT (GPT-5.3, OpenAI), Gemini (3.1 Flash, Google), and Perplexity (Sonar, Perplexity AI). Model versions reflect default consumer-interface configurations at the time of testing (April 2026).
+---
 
-## Data preparation performed for this package
+## Study Design Overview
 
-* Converted uploaded spreadsheets and CSVs into GitHub-friendly UTF-8 CSV files.
-* Split multi-tab Excel workbooks into separate CSV files.
-* Resolved spreadsheet formulas to stored values where possible.
-* Reconstructed raw responses from line-oriented source sheets into one row per trial where possible.
-* Exported hidden workbook validation lists into a visible metadata CSV.
-* Did not include original `.xlsx` workbooks, reducing the risk of embedded workbook metadata.
+The study employed semantically opaque fictitious domain stems paired systematically with both general-purpose namespaces (`.com`, `.org`) and sector-designated namespaces (`.med`, `.finance`, `.legal`, `.kids`) in order to isolate the independent procedural effect of namespace-level structure during early-stage source triage.
 
-## Replication notes
+Experimental conditions examined how frontier AI systems operationalized namespace-level informational structure under zero-content conditions prior to downstream retrieval and verification. Prompt conditions included:
 
-The data support replication of the reported coding and summary analyses. Because model outputs can vary by model version, interface, and run conditions, these files should be treated as the recorded outputs for the reported run rather than a guarantee of future response stability.
+* full triage evaluation,
+* comparative handling assessment,
+* constrained interpretation,
+* procedural classification,
+* verification prioritization,
+* and forced-choice routing tasks.
+
+The primary fictitious stems used in the study were:
+
+* `lanteravia`
+* `merquonix`
+* `caldrison`
+
+Semantically opaque fictitious stems were intentionally used in order to isolate the independent procedural effect of namespace-level structure during early-stage source triage. Although some domain stems may appear semantically suggestive or reflect prior model exposure, they do not provide a sufficiently reliable or scalable mechanism for resolving Signal Gap conditions across general-purpose namespace environments.
+
+At the time of testing, each fictitious stem remained unregistered across all evaluated namespace conditions in order to minimize contamination from existing domain associations or prior retrieval exposure.
+
+Models represented in the dataset include:
+
+* Claude (Sonnet 4.6, Anthropic)
+* ChatGPT (GPT-5.3, OpenAI)
+* Gemini (3.1 Flash, Google)
+* Perplexity (Sonar, Perplexity AI)
+
+Model versions reflect default consumer-interface configurations at the time of testing (April 2026).
+
+---
+
+## Data Preparation
+
+The repository package includes several normalization and preparation steps:
+
+* Conversion of uploaded spreadsheets and CSVs into UTF-8 GitHub-compatible CSV files.
+* Separation of multi-tab Excel workbooks into independent CSV datasets.
+* Resolution of spreadsheet formulas to stored values where possible.
+* Reconstruction of raw response sheets into one row per experimental trial where feasible.
+* Export of hidden workbook validation lists into visible metadata files.
+* Exclusion of original `.xlsx` workbooks to reduce embedded workbook metadata exposure.
+
+---
+
+## Replication Notes
+
+These datasets support replication of the reported coding procedures and summary analyses. Because frontier AI system behavior varies across model versions, interfaces, safety policies, and retrieval conditions, the files should be interpreted as recorded outputs from the reported testing period rather than as guarantees of future response stability.
+
+The study intentionally isolated namespace-level structural signals under zero-content conditions. The datasets therefore reflect early-stage procedural inference behavior rather than end-to-end retrieval performance.
+
+---
 
 ## Data Use
 
-These files represent the recorded outputs of specific model versions under controlled conditions at the time of testing. They are made available for replication, secondary analysis, and methodological comparison. Because large language model behavior varies across versions and interfaces, these data should be treated as a historical snapshot rather than a guarantee of future model responses. Users are free to reuse and adapt the data with appropriate citation.
+These materials are provided for replication, methodological comparison, secondary analysis, and related research purposes. Users are free to reuse and adapt the data with appropriate citation.
+
+---
 
 ## Citation
 
 If you use this dataset, please cite:
 
-Fassett, Ray. (2026). *Top‑Level Domain Signals, Signal Gap, and AI Source Triage — Study 1 Data*.
+Fassett, Ray. (2026). *Namespace Architecture and Early-Stage Procedural Inference — Study 1 Data.*
+
+---
 
 ## Contact
 
-For questions, collaborations, or extensions of this work, contact the study author rfassett [at] trust.med
+For questions, collaborations, or extensions of this work:
 
-
+Ray Fassett  
+rfassett [at] trust.med
