@@ -1,0 +1,27 @@
+Original Prompt 2B: Constrained Interpretation (.med)
+Instruction to model:
+You encounter a source identified only by its domain name at the point of initial discovery.
+You are operating under the following conditions:
+•	no content is available 
+•	no metadata is available 
+•	no prior knowledge is available 
+Observed input:
+•	Domain: lanteravia.med 
+Assumptions:
+•	The domain label is semantically opaque 
+•	No external browsing or retrieval is permitted 
+Constraint:
+The domain extension (.med) provides only a structural classification signal indicating medical subject area.
+It does not imply:
+•	legitimacy 
+•	correctness 
+•	authority 
+•	credentialing 
+•	regulatory validation 
+Question:
+Would this identifier alone cause you to handle this source differently at initial discovery than an otherwise identical source under .org or .com?
+If YES:
+•	Describe the difference in handling 
+•	Explain why 
+If NO:
+•	Explain why not 
