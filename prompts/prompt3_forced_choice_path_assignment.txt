@@ -1,48 +1,40 @@
-Prompt 3: Forced-Choice Path Assignment (Constrained)
-
+Prompt 3: Forced-Choice Procedural Routing Under Constraint
 Instruction to model:
 You encounter a source identified only by its domain name at the point of initial discovery.
-
 You are operating under the following conditions:
-- no content is available
-- no metadata is available
-- no prior knowledge is available
-
+•	no content is available 
+•	no metadata is available 
+•	no prior knowledge is available 
 Observed input:
-- Domain: lanteravia.med
-
+•	Domain: lanteravia.legal 
 Assumptions:
-- The domain label is semantically opaque
-- No external browsing or retrieval is permitted
-
+•	The domain label is semantically opaque 
+•	No external browsing or retrieval is permitted 
 Constraint:
-The domain extension (e.g., .med) provides only a structural classification signal indicating subject area (e.g., medical context).
-It does not imply:
-- legitimacy
-- correctness
-- authority
-- credentialing
-- regulatory validation
-
+The domain extension (e.g., .legal) provides only a structural subject-area classification signal.
+It may inform risk considerations but does not imply:
+•	legitimacy 
+•	correctness 
+•	authority 
+•	credentialing 
+•	regulatory validation 
 Task:
 Assign this source to one of the following initial discovery handling paths:
-- Path A: General Processing
-  Standard baseline evaluation; no elevated scrutiny or verification priority
-- Path B: Elevated Scrutiny Path
-  Increased attention to claims and evidence; no immediate verification prioritization
-- Path C: High-Priority Verification Path
-  Immediate prioritization for verification; early cross-checking, credential validation, and corroboration
-
+Path A: Elevated Scrutiny Path
+Increased attention to claims and evidence without immediate verification prioritization
+Path B: Uncertainty-Preserving Path
+Defer judgment and maintain neutral handling until more information is available
+Path C: High-Priority Verification Path
+Immediate prioritization for verification including early cross-checking and credential validation
 Instructions:
-- You must choose one option (A, B, or C)
-- You may not defer, delay, or request more information
-- Your decision must be based only on the identifier and the constraint above
-
+•	You must choose one option (A, B, or C) 
+•	You may not defer, delay, or request more information 
+•	Your decision must be based only on the domain identifier and the constraint above 
 Response format:
-1. Selected option (A, B, or C)
-2. Brief explanation (why this path was chosen)
-3. Indicate the primary driver of your decision:
-   - classification
-   - risk weighting
-   - scrutiny
-   - verification priority
+1.	Selected option (A, B, or C) 
+2.	Brief explanation (why this path was chosen) 
+3.	Indicate the primary driver of your decision: 
+•	classification 
+•	risk weighting 
+•	scrutiny 
+•	verification priority 
