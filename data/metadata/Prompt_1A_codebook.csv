@@ -1,0 +1,52 @@
+variable,description,values
+study_id,Study identifier,study1_P1
+session_id,Testing session identifier,S1
+trial_id,Unique identifier for each domain TLD trial,
+run_id,Replication run identifier,R1
+sequence_order,Order of domain/TLD presentation within each stem block,"1, 2, 3, 4, 5, 6"
+model_name,Model used,"chatgpt, claude, gemini, perplexity"
+timestamp,Date of response collection,
+domain,Full domain tested,
+stem,Fictitious second-level domain label,"caldrison, caldrsion, lanteravia, merquonix"
+tld,Top-level domain,".com, .finance, .kids, .legal, .med, .org"
+tld_type,Namespace category,"general-purpose, sector-specific"
+label_type,Namespace label/semantic category,"child-oriented, finance, general, legal, medical"
+prompt_type,Prompt condition/type,"child-oriented, full_triage"
+prompt_id,Prompt identifier,S1_P1
+retrieval_priority_1,Priority 1 retrieval step or information source identified by the model,free text
+retrieval_type_1,Categorical type of priority 1 retrieval step,"infrastructure, metadata, structural, technical"
+retrieval_purpose_1,Purpose or rationale for priority 1 retrieval step,free text
+retrieval_confidence_1,Model confidence associated with priority 1 retrieval step,0-100
+retrieval_priority_2,Priority 2 retrieval step or information source identified by the model,free text
+retrieval_type_2,Categorical type of priority 2 retrieval step,"attribution, behavior, compliance, content, content-structure, corroboration, governance, infrastructure, metadata, policy, reputation, technical"
+retrieval_purpose_2,Purpose or rationale for priority 2 retrieval step,free text
+retrieval_confidence_2,Model confidence associated with priority 2 retrieval step,0-100
+retrieval_priority_3,Priority 3 retrieval step or information source identified by the model,free text
+retrieval_type_3,Categorical type of priority 3 retrieval step,"infrastructure, metadata, structural, technical, content, external"
+retrieval_purpose_3,Purpose or rationale for priority 3 retrieval step,free text
+retrieval_confidence_3,Model confidence associated with priority 3 retrieval step,0-100
+retrieval_priority_4,Priority 4 retrieval step or information source identified by the model,free text
+retrieval_type_4,Categorical type of priority 4 retrieval step,"attribution, behavior, content, historical, procedural, reputation, technical, verification"
+retrieval_purpose_4,Purpose or rationale for priority 4 retrieval step,free text
+retrieval_confidence_4,Model confidence associated with priority 4 retrieval step,0-100
+retrieval_priority_5,Priority 5 retrieval step or information source identified by the model,free text
+retrieval_type_5,Categorical type of priority 5 retrieval step,"content, corroboration"
+retrieval_purpose_5,Purpose or rationale for priority 5 retrieval step,free text
+retrieval_confidence_5,Model confidence associated with priority 5 retrieval step,0-100
+overall_retrieval_strategy,Overall retrieval strategy coded from the response,"sector-guided, uncertainty-preserving, mixed"
+uncertainty_posture,How the response operationalizes uncertainty,narrowed
+verification_escalation,Whether the response escalates verification demands,"high, medium, moderate"
+retrieval_depth_priority,Depth or intensity of retrieval recommended,"metadata-first, passive-before-active, passive-first"
+justification_type,Primary reasoning basis for retrieval sequencing,"governance, mixed, passive, structural"
+justification_notes,Coder notes summarizing retrieval-sequencing rationale,free text
+caution_count,Number of cautionary or hedging expressions coded in the response,integer
+mentions_risk,Whether risk considerations are explicitly mentioned,"0=no, 1=yes"
+mentions_verification,Whether verification needs are explicitly mentioned,"0=no, 1=yes"
+mentions_uncertainty,Whether uncertainty is explicitly mentioned,"0=no, 1=yes"
+mentions_scrutiny,Whether scrutiny or heightened scrutiny is explicitly mentioned,"0=no, 1=yes"
+mentions_retrieval_sequencing,Whether retrieval sequencing/order is explicitly mentioned,"0=no, 1=yes"
+mentions_authority_checking,"Whether authority, credentials, or institutional checking is explicitly mentioned","0=no, 1=yes"
+mentions_metadata,Whether metadata or structural metadata is explicitly mentioned,"0=no, 1=yes"
+mentions_content_retrieval,Whether content retrieval or content inspection is explicitly mentioned,"0=no, 1=yes"
+coder_id,Coder identifier,RF
+coding_version,Coding schema version,v1
