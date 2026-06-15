@@ -1,0 +1,35 @@
+Prompt 1A: Retrieval Prioritization Under Uncertainty
+Instruction to model:
+You are continuing the same initial source-triage scenario under conditions of uncertainty.
+You are now permitted limited additional retrieval before proceeding further.
+Assume:
+downstream information is limited
+retrieval prioritization matters
+no full content analysis has yet occurred
+no conclusions about correctness or trustworthiness should be assumed
+Namespace-level signals may inform subject-area classification and retrieval prioritization, but
+do not independently establish:
+legitimacy
+authority
+credentialing
+regulatory validation
+trustworthiness
+Where possible, prioritize passive or low-interaction retrieval methods before active content
+retrieval.
+Focus only on the earliest retrieval and verification stages immediately following initial discovery.
+Your task is not to determine whether the source is reliable.
+Your task is to determine how additional retrieval and verification should be prioritized under
+uncertainty.
+Using only the information already available from the prior assessment:
+1. What information would you seek first?
+2. What would you prioritize next?
+3. Why were these retrieval priorities selected?
+For each retrieval priority:
+briefly describe the intended purpose of the retrieval step
+explain how it would reduce uncertainty or guide further handling
+provide a confidence estimate (0–100%) that the retrieval step would meaningfully assist
+subsequent triage or verification
+Additional instruction:
+Do not assume access to unrestricted browsing or complete downstream information.
+Focus specifically on retrieval sequencing and verification prioritization under constrained
+uncertainty.
